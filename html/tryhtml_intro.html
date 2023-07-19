@@ -4,12 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello world!!</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        p{
+            text-align:justify;
+            color: purple;
+            font-family: sans-serif,'Franklin Gothic Medium', 'Arial Narrow', Arial ;
+            font-size:16px;
+        }
+    </style>
 </head>
 <body>
     <h1>Welcome to my website !!</h1>
     <br>
-    <p>This is just Test </p>
-    <h1>Introduction</h1>
+    <p  class="red">This is just Test </p>
+    <h1 style="color: red; text-align: center;">Introduction</h1>
     <p>HTML describes the structure of a Web page</p>
     <p>HTML is the standard markup language for creating Web pages.</p><br>
     <p>HTML stands for Hyper Text Markup Language</p>
@@ -21,7 +30,7 @@
     <a href="index.html">First page</a>
     <h3>HTML CSS</h3>
     <img src="../images/image.png" alt="HTML and CSS icon" width="300" height="200">
-    <h4>HTML Editors</h4>
+    <h4 id="redcolor">HTML Editors</h4>
     <h5>HTTML Responsive</h5>
     <h6>HTML Classes</h6>
     
@@ -61,7 +70,59 @@
         Various versions have evolved over the <small>years</small>, sometimes by <sup>accident</sup>, sometimes on <strong>purpose</strong> (injected humour and the like).
         <br> H<sub>2</sub>O <br>
         x<sup>2</sup> + x <sup>2</sup>
-        
     </p>
+    <hr>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <hr>
+    <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <hr>
+    <table class="table" border="1">
+        <tr>
+            <th>Elements</th>
+            <th rowspan="2">Attributes</th>
+            <th>colors</th>
+        </tr>
+        <tr>
+            <td>list</td>
+            <td>blue</td>
+        </tr>
+        <tr>
+            <td>table</td>
+            <td colspan="2">width</td>
+        </tr>
+    </table>
+    <b class="color">practice!</b> <b>practice!</b> <b class="color">practice!</b>
+    <div>
+        <hr class="center">
+        <h1 class="color">CSS Introduction</h1>
+        <h2>What is CSS?</h2>
+        <ul>
+            <li>CSS stands for Cascading Style Sheets</li>
+            <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+            <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+            <li>External stylesheets are stored in CSS files</li>
+        </ul>
+        <h2>Why Use CSS?</h2>
+        <p class="center bold color">CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.
+        </p>
+
+    </div>
+    <div class="background">
+        <h1>Why do we use it?</h1>
+    <p>
+        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+        The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. 
+        Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
+        Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+    </p>
+    </div>
 </body>
 </html>
