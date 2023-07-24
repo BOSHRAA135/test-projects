@@ -4,8 +4,8 @@
 body {
     background-color: bisque;
 }
-.table {
-    border: 10px;
+.table1{
+    border-style: solid;
     border-color: blueviolet;
 }
 p{
@@ -13,7 +13,9 @@ p{
     text-align: justify;
 }
 h1{
+    border-style: dotted;
     color: royalblue;
+    background-color: #ffff00;
 }
 b{
     color: chocolate;
@@ -27,7 +29,7 @@ b{
     text-align: center;
 }
 b.color{
-    color: green;
+    color: #00FF00;
 }
 .center{
     text-align: center;
@@ -35,8 +37,8 @@ b.color{
 h1.color{
    /* color: blueviolet;  predefined color name*/
    /* color:rgb(255, 0 , 0) ;  rgb */
-   background-color: rgba(255 , 0 , 0 , .2);
-
+   /*background-color: rgba(255 , 0 , 0 , .2);*/
+    background-color: #00FF00;
 }
 .background{
     background-color: darksalmon;
