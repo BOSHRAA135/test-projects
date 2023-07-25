@@ -9,7 +9,7 @@
            border-style: solid;
             background-color: #00ff00;
             border-color: green;
-            border-width: 5px;
+            border-width: 5px; 
             border-top-left-radius: 10px;
             border-bottom-right-radius: 10px;
                   /* width style color*/
@@ -51,6 +51,11 @@
             padding: 30px;
             background-color: lightgray;
         }
+        .inline-block{
+            background-color:chocolate;
+            padding: 10px;
+            border-radius: 20px;
+        }
         .inline-block .p4{
             background-color: #00ff00;
             width: 200px;
@@ -61,6 +66,10 @@
             width: 200px;
             height: 500px;
         }
+        .inline-block .s{
+            background-color: red;
+            font-weight: bold;
+        }
         .list{
             border: 5px solid yellow;
             background-color: burlywood;
@@ -68,8 +77,65 @@
         .list .l{
             background-color: darksalmon;
         }
-        a{
+        .a1{
             background-color: rgb(244, 122, 122);
+            display: block;
+            margin: 10px 0;
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .container3{
+            background-color: lightgray;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px dashed gray;
+            border-radius: 10px;
+        }
+        .Lorem{
+            font-size: 25px;
+            text-transform: uppercase;
+            background-color: gray;
+            border-radius: 5px;
+            padding: 2px;
+        }
+        .display .p5{
+            display: inline;
+            background-color: lightgray;
+            width: 100px;
+        }
+        .p6{
+            background-color: gray;
+            padding: 10px;
+            width: 200px;
+            display: none;
+        }
+        .p7{
+            background-color: gold;
+            padding: 10px;
+            width: 200px;
+            visibility: hidden;
+        }
+        .p88{
+            background-color: aqua;
+            margin-left: 40px;
+            margin-right: 40px;
+            padding: 10px;
+
+        }
+        .a2{
+            box-sizing: border-box;
+            background-color: red;
+            font-size: 30px;
+            margin:50px; 
+            padding-top:50px;
+            display:inline-block;
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            color: aqua;
+            border-radius: 20px;
         }
     </style>
 </head>
@@ -96,7 +162,7 @@
     </div>
     <div class="inline-block">
         <h1>This is a heading</h1>
-        <p class="p4">this is a paragragh.</p>
+        <p class="p4">this is a <span class="s">paragragh</span>. </p>
         <p class="p4">this is a paragaragh.</p>
         <b class="b1">HTML</b> <b class="b1">HTML</b> <b class="b1">HTML</b>  
         <ol class="list">
@@ -104,9 +170,30 @@
             <li class="l">tea</li>
             <li class="l">Milk</li>
         </ol>
-        <a href="https://google.com">Google</a>
-        <a href="https://google.com">Google</a>
-        <a href="https://google.com">Google</a>
+        <a href="https://google.com" class="a1">Google</a>
+        <a href="https://google.com" class="a1">Google</a>
+        <a href="https://google.com" class="a1">Google</a>
+    </div>
+    <div class="container3">
+        <h1> This is a heading!!</h1>
+        <p><span class="Lorem">Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit. 
+           Hic doloremque voluptatibus corrupti, fuga aut numquam dicta rerum, natus error minima esse atque,
+           dolore neque explicabo temporibus animi itaque ad blanditiis.</p>
+    </div>
+    <div class="container3">
+        <h1> This is a heading!!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+           Hic doloremque voluptatibus corrupti, fuga aut numquam dicta rerum, natus error minima esse atque,
+           dolore neque explicabo temporibus animi itaque ad blanditiis.</p>
+    </div>
+    <div class="display">
+        <p class="p5">this is a pragaragh</p>
+        <p class="p5">this is a paragragh</p>
+        <p class="p6">this is a pragaragh</p>
+        <p class="p7">this is a paragragh</p>
+        <p class="p8">this is a <span class="p88">paragragh</span></p>
+        <a href="" class="a2">google</a>
+        <a href="" class="a2">google</a>
     </div>
 </body>
 </html>
