@@ -4,9 +4,11 @@
 body {
     background-color: bisque;
 }
-.table1{
+.table1 .t1{
     border-style: solid;
     border-color: blueviolet;
+    /* Error , I dont know this problem  */
+
 }
 p{
     color: black;

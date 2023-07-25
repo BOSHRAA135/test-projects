@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reviewing CSS</title>
+    <style>
+        h1{
+           border-style: solid;
+            background-color: #00ff00;
+            border-color: green;
+            border-width: 5px;
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+                  /* width style color*/
+            /* border : 5px solid rebeccapurple;
+            border-right : 5px solid rebeccapurple;*/
+        }
+        .container{
+            border: 2px solid yellow;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+        }
+        .container .p1 {
+            border: 5px solid red;
+            border-radius: 10px;
+            /*padding-top: 40px;
+            padding-left: 30px;
+            padding-bottom: 50px;
+            padding-right: 45px; */
+            padding: 40px;
+            /*padding: 10px 20px 30px 40px;*/
+            margin: 10px;
+        }
+        .container1 .p2{
+            background-color: lightgray;
+            border: 1px solid red;
+            padding: 10px;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            width: 300px;
+           /* height: 300px; */
+
+        }
+        .container2 .p3{
+            box-sizing: border-box ;
+            width: 200px;
+            height: 200px;
+            border: 5px solid yellow;
+            padding: 30px;
+            background-color: lightgray;
+        }
+        .inline-block .p4{
+            background-color: #00ff00;
+            width: 200px;
+            height: 100px;
+        }
+        .inline-block .b1{
+            background-color: plum;
+            width: 200px;
+            height: 500px;
+        }
+        .list{
+            border: 5px solid yellow;
+            background-color: burlywood;
+        }
+        .list .l{
+            background-color: darksalmon;
+        }
+        a{
+            background-color: rgb(244, 122, 122);
+        }
+    </style>
+</head>
+<body>
+    <h1>Border style</h1>
+    <div class="container">
+        <p class="p1">this is a paragragh</p>
+        <p class="p1">this is a paragragh</p>
+    </div>
+    <div class="container1">
+        <p class="p2">This is a paragragh</p>
+        <p class="p2">Ut eu facilisis justo. 
+            Maecenas id ligula condimentum, posuere diam eu, sodales est.
+            Suspendisse potenti. Quisque semper ex a porttitor euismod. 
+            Ut sollicitudin, turpis nec finibus pellentesque, mi mi dignissim nulla, id egestas nulla nunc in tellus.
+            Aliquam leo neque, gravida quis consectetur ac, luctus non mi. Vivamus condimentum magna leo, eu consequat metus porttitor ac.
+            Curabitur eu libero vitae metus ullamcorper iaculis vel at sapien. Suspendisse potenti. Praesent efficitur nisi risus, eget aliquam sem tempor sed.
+            Aenean cursus tempor dapibus. Nam in magna ac ligula mollis porta et et tortor.
+            Donec nec diam in felis pellentesque ornare ut ac purus. Aenean eget nulla eu massa fermentum fringilla vel nec purus. Aenean risus quam, mattis eget tristique a, rhoncus vel elit. 
+            Ut ac luctus eros, eget suscipit purus.</p>
+    </div>
+    <div class="container2">
+        <p class="p3">this is a paragragh</p>
+    </div>
+    <div class="inline-block">
+        <h1>This is a heading</h1>
+        <p class="p4">this is a paragragh.</p>
+        <p class="p4">this is a paragaragh.</p>
+        <b class="b1">HTML</b> <b class="b1">HTML</b> <b class="b1">HTML</b>  
+        <ol class="list">
+            <li class="l">Coffee</li>
+            <li class="l">tea</li>
+            <li class="l">Milk</li>
+        </ol>
+        <a href="https://google.com">Google</a>
+        <a href="https://google.com">Google</a>
+        <a href="https://google.com">Google</a>
+    </div>
+</body>
+</html>
