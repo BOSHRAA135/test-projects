@@ -1,0 +1,56 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin:0;
+}
+ul{
+    list-style-type: none;
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+li{
+    display: inline-block;
+}
+li a{
+    display:inline-block;
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+}
+li a:hover{
+    background-color:burlywood;
+    color: purple;
+}
+.section{
+    box-sizing: border-box;
+    background-color: lightgray;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 15px;
+}
+.section h2{
+    background-color: burlywood;
+    padding: 10px ;
+    border-radius: 10px;
+    color:brown ;
+}
+
+.link{
+    display: inline-block;
+    text-decoration: none;
+    background-color: burlywood;
+    color: black;
+    padding: 20px;
+    margin:30px  10px;
+    border-radius: 5px;
+
+}
+.link:hover{
+    background-color: rgb(227, 133, 66) ;
+    color:rgb(241, 235, 227) ;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
