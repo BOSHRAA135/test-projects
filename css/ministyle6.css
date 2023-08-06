@@ -169,7 +169,6 @@ body{
 }
 .btn1 a:hover{
     background-color: #2b9971;
-    text-decoration: underline;
 } 
 
 .btn2 a{
@@ -186,7 +185,6 @@ body{
 }
 .btn2 a:hover{
     background-color: rgb(226, 220, 220);
-    text-decoration: underline;
 } 
 
 .container{
@@ -205,6 +203,8 @@ body{
     margin:15px auto;
     border-left: 5px solid #04aa6d;
     padding:10px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
 
 }
 
@@ -223,11 +223,79 @@ body{
 }
 .btn3 a:hover{
     background-color: #2b9971;
-    text-decoration: underline;
 } 
+
 span{
     color: #A52A2A;
 }
 .h{
     color: red;
+}
+
+.section2 {
+    background-color: aqua;
+    height: 550px;
+    position: relative;
+}
+
+.section2 .left{
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #fff4a3;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.section2 .left .title1{
+    font-size: 110px;
+    font-weight: bold;
+}
+
+.section2 .left .desc1{
+    font-size: 19px;
+    font-weight: bold;
+    margin: 25px auto;
+}
+
+.section2 .left .btn1 a{
+    background-color: #282a35;
+    color: #ffffff;
+}
+
+.section2 .left .btn1 a:hover{
+    background-color: black;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.section2 .left .btn2 a {
+    background-color: #FFC0C7;
+    color: #282a35;
+}
+
+.section2 .left .btn2 a:hover{
+    background-color: #f1a9b1;
+}
+
+.section2 .right {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #fff4a3;
+}
+
+.section2 .container {
+    box-shadow: 0 0 20px rgb(109, 106, 106);
+}
+
+.section2 .right .code {
+    height: 240px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+}
+.c{
+    color: #0000CD;
 }
