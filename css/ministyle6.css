@@ -44,8 +44,7 @@ body{
 .header .left .menu ul li{
     display: inline-block;
     font-weight: bold;
-    font-size: 18px;
-    
+    font-size: 18px; 
 }
 
 .header .left .menu ul li a{
@@ -53,7 +52,6 @@ body{
     display: inline-block;
     color: black;
     padding: 30px;
-   
 }
 
 .header .left .menu ul li a:hover{
