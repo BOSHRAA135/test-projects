@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .form1{
+            width: 500px;
+            background-color: lightgray;
+            margin:100px auto;
+            border: 2px dotted gray;
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 20px;
+        }
+        fieldset{
+            padding: 15px;
+        }
+        .form1 input{
+            width: 100%;
+            padding: 10px;
+        }
+        .form1 input[type="submit"]{
+            background-color: rgb(224, 105, 105);
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="fname">first name :</label><br>
+        <input type="text" id="fname" value="please Enter ur name"><br>
+
+        <label for="lname">last name:</label><br>
+        <input type="text" id="lname"><br>
+
+        <label for="pass">password :</label><br>
+        <input type="password" id="pass"><br>
+
+        <input type="submit">
+
+        <input type="reset"><br>
+
+        <input type="radio" id="HTML" name="fav-language" value="HTML">
+        <label for="HTML">HTML</label><br>
+        <input type="radio" id="Css" name="fav-language" value="CSS">
+        <label for="Css">CSS</label><br>
+        <input type="radio" id="Js" name="fav-language" value="JavaScript">
+        <label for="Js">JavaScript</label>
+
+        <hr>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1">I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2">I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3">I have a boat</label><br>
+        <input type="submit" value="Submit">
+
+        <hr>
+        <input type="button" onclick="alert('Hello World!')" value="Click me!"> <br>
+
+        <label for="favcolor">Select your favorite color :</label>
+        <input type="color" id="favcolor" name="favcolor" ><br>
+
+        <label for="birthday">Birthday :</label>
+        <input type="date" id="birthday" min="2000-01-02"><br>
+
+        <label for="email">Enter your Email :</label>
+        <input type="email" id="email">
+        <input type="submit" value="submit"><br>
+
+        <label for="myfile">Select a file :</label>
+        <input type="file" id="myfile" name="myfile"> <br>
+
+        <label for="quantity">Quantity (between 1 and 20): </label>
+        <input type="number" id="quantity" name="quantity" min="1" max="20"><br>
+
+        <label for="cars">Choose a Car:</label>
+        <select name="cars" id="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat" selected>Fiat</option>
+            <option value="audi">Audi</option>
+        </select><br>
+
+
+        <label for="massage">Enter your massage:</label><br>
+        <textarea name="massage" id="massage" cols="30" rows="10">The cat was playing in the garden.
+        </textarea>
+        <br><br>
+
+        <input type="submit" value="Submit"> <br><br>
+
+        <form action="">
+            <fieldset>
+                <legend>Personalia:</legend>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname"><br>
+                <label for="birthday">Birthday:</label><br>
+                <input type="date" id="birthday">
+            </fieldset>
+        </form> <br>
+        <form action="">
+            <label for="browser">choose :</label><br>
+            <input list="browsers" id="browser">
+            <datalist id="browsers">
+                <option value="Chrome"></option>
+                <option value="Opera"></option>
+                <option value="Internet Explorer"></option>
+                <option value="Firefox"></option>
+                <option value="Safari"></option>
+            </datalist>
+        </form>
+        <form action="" class="form1">
+            <fieldset>
+                <legend>This is a form:</legend>
+                <label for="f-name">First name:</label><br>
+                <input type="text" id="f-name" readonly value="Fa"><br>
+                <label for="f-name">First name:</label><br>
+                <input type="text" id="f-name" autocomplete="on"><br>
+                <label for="f-name">First name:</label><br>
+                <input type="text" id="f-name" placeholder="please enter your name"><br>
+                <label for="l-name">Last name:</label><br>
+                <input type="text" id="l-name" disabled><br>
+                <label for="uname">User Name:</label><br>
+                <input type="text" id="uname" maxlength="5" autofocus><br>
+                <label for="Paw">Password:</label><br>
+                <input type="password" id="paw" required><br><br>
+
+                <input type="submit" name="" id="" value="create account">
+            </fieldset>
+        </form>
+        
+
+    </form>
+</body>
+</html>
