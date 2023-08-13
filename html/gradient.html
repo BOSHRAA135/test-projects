@@ -8,7 +8,28 @@
         .box{
             width: 450px;
             height: 200px;
-            background:linear-gradient(to bottom right,deeppink,yellow,rgb(69, 243, 16));
+            /*background:linear-gradient(to bottom right,deeppink,yellow,rgb(69, 243, 16));
+            background:linear-gradient(90deg , deeppink, yellow 20%, yellow 80%, lime);*/
+            background: linear-gradient(to right, deeppink, yellow 50px, yellow 250px, lime);
+        }
+        .box2{
+            width: 450px;
+            height: 200px;
+            /*background: radial-gradient(ellipse,deeppink,yellow,lime);*/
+            background: radial-gradient(circle,deeppink,yellow,lime);
+            margin-top: 30px;
+        }
+        .box3{
+            width: 350px;
+            height: 250px;
+            margin: 30px;
+            background: radial-gradient(ellipse, deeppink , deeppink 20%, yellow 20% , yellow 50%, lime 50% , lime 100%);
+        }
+        .box4{
+            width: 400px;
+            height: 300px;
+            /*ackground:radial-gradient(circle at right top , deeppink , yellow 20%,lime) ;*/
+            background: radial-gradient(circle at 100px 100px , deeppink, yellow 20% , lime);
         }
     </style>
 </head>
@@ -16,5 +37,8 @@
     <div class="box">
 
     </div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
 </body>
 </html>
