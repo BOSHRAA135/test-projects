@@ -21,6 +21,21 @@
             background-color: lightgray;
             margin: 5px;
         }
+
+        .container1{
+            border: 2px dotted red;
+            display: flex;
+            flex-direction: row;
+            /*flex-wrap: wrap;
+            flex-wrap: nowrap;*/
+            flex-wrap: wrap-reverse;
+        }
+        .item1{
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            font-size: 30px;
+        }
     </style>
 </head>
 <body>
@@ -29,6 +44,15 @@
         <div class="item">2</div>
         <div class="item">3</div>
         <div class="item">4</div>
+    </div>
+    <div class="container1">
+        <div class="item1" style="background-color: aqua;">1</div>
+        <div class="item1" style="background-color: red;">2</div>
+        <div class="item1" style="background-color: green;">3</div>
+        <div class="item1" style="background-color: blue;">4</div>
+        <div class="item1" style="background-color: purple;">5</div>
+        <div class="item1" style="background-color: pink;">6</div>
+        <div class="item1" style="background-color: chocolate;">7</div>
     </div>
 </body>
 </html>
