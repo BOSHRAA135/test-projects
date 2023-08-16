@@ -1,3 +1,51 @@
+*{
+    
+}
 body {
-    background-color: aqua;
+    background-color: bisque;
+}
+.table1 .t1{
+    border-style: solid;
+    border-color: blueviolet;
+    /* Error , I dont know this problem  */
+
+}
+p{
+    color: black;
+    text-align: justify;
+}
+h1{
+    border-style: dotted;
+    color: royalblue;
+    background-color: #ffff00;
+}
+b{
+    color: chocolate;
+}
+.red{
+    color: red;
+    text-align: center;
+}
+#redcolor{
+    color: red;
+    text-align: center;
+}
+b.color{
+    color: #00FF00;
+}
+.center{
+    text-align: center;
+}
+h1.color{
+   /* color: blueviolet;  predefined color name*/
+   /* color:rgb(255, 0 , 0) ;  rgb */
+   /*background-color: rgba(255 , 0 , 0 , .2);*/
+    background-color: #00FF00;
+}
+.background{
+    background-color: darksalmon;
+    padding: 20px;
+}
+.bold{
+    font-weight: bold; 
 }

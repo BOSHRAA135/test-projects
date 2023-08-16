@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reviewing CSS</title>
+    <style>
+        h1{
+           border-style: solid;
+            background-color: #00ff00;
+            border-color: green;
+            border-width: 5px; 
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+                  /* width style color*/
+            /* border : 5px solid rebeccapurple;
+            border-right : 5px solid rebeccapurple;*/
+        }
+        .container{
+            border: 2px solid yellow;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+        }
+        .container .p1 {
+            border: 5px solid red;
+            border-radius: 10px;
+            /*padding-top: 40px;
+            padding-left: 30px;
+            padding-bottom: 50px;
+            padding-right: 45px; */
+            padding: 40px;
+            /*padding: 10px 20px 30px 40px;*/
+            margin: 10px;
+        }
+        .container1 .p2{
+            background-color: lightgray;
+            border: 1px solid red;
+            padding: 10px;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            width: 300px;
+           /* height: 300px; */
+
+        }
+        .container2 .p3{
+            box-sizing: border-box ;
+            width: 200px;
+            height: 200px;
+            border: 5px solid yellow;
+            padding: 30px;
+            background-color: lightgray;
+        }
+        .inline-block{
+            background-color:chocolate;
+            padding: 10px;
+            border-radius: 20px;
+        }
+        .inline-block .p4{
+            background-color: #00ff00;
+            width: 200px;
+            height: 100px;
+        }
+        .inline-block .b1{
+            background-color: plum;
+            width: 200px;
+            height: 500px;
+        }
+        .inline-block .s{
+            background-color: red;
+            font-weight: bold;
+        }
+        .list{
+            border: 5px solid yellow;
+            background-color: burlywood;
+        }
+        .list .l{
+            background-color: darksalmon;
+        }
+        .a1{
+            background-color: rgb(244, 122, 122);
+            display: block;
+            margin: 10px 0;
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .container3{
+            background-color: lightgray;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px dashed gray;
+            border-radius: 10px;
+        }
+        .Lorem{
+            font-size: 25px;
+            text-transform: uppercase;
+            background-color: gray;
+            border-radius: 5px;
+            padding: 2px;
+        }
+        .display .p5{
+            display: inline;
+            background-color: lightgray;
+            width: 100px;
+        }
+        .p6{
+            background-color: gray;
+            padding: 10px;
+            width: 200px;
+            display: none;
+        }
+        .p7{
+            background-color: gold;
+            padding: 10px;
+            width: 200px;
+            visibility: hidden;
+        }
+        .p88{
+            background-color: aqua;
+            margin-left: 40px;
+            margin-right: 40px;
+            padding: 10px;
+
+        }
+        .a2{
+            box-sizing: border-box;
+            background-color: red;
+            font-size: 30px;
+            margin:50px; 
+            padding-top:50px;
+            display:inline-block;
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            color: aqua;
+            border-radius: 20px;
+        }
+        .p9{
+            background-color: lightgray;
+            text-align: center;
+            height: 150px;
+            
+        }
+        .d1{
+            background-color: lightgray;
+            width: 200px;
+            height: 100px;
+            margin: auto;
+            text-align: center;
+          /*  margin-left: auto;
+            margin-right: auto; */
+        }
+        .father{
+            background-color: lightgray;
+            width: 400px;
+            height: 200px;
+            margin:20px auto;
+            padding-top: 50px;
+            box-sizing: border-box;
+
+        }
+        .child{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: auto;
+        }
+        .father1{
+            background-color: lightgray;
+            width: 400px;
+            height: 200px;
+            margin:20px auto;
+            box-sizing: border-box;
+            text-align: center;
+
+        }
+        .child1{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            text-align: center;
+           
+        }
+        .links{
+            border: 10px dashed blueviolet;
+            padding: 20px;
+            text-align: center;
+            width: 500px;
+            margin:60px auto;
+        }
+        .link1:link{
+            display: inline-block;
+            text-decoration: none;
+            background-color: #00ff00;
+            color: black;
+            font-size: 35px;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .link1:visited{
+            background-color:yellow ;
+            color: blueviolet; 
+        }
+        .link1:hover{
+            background-color: burlywood;
+            border  : 10px;
+            border-top-left-radius:20px;
+            border-bottom-right-radius: 20px;
+            color: brown;
+        }
+        .link1:active{
+            background-color: chocolate;
+            color: rgb(245, 215, 175);
+        }
+        .nav{
+            width: 200px;
+            background-color: burlywood;
+            margin: 0;
+            list-style-type: none;
+            padding: 0;
+            
+        }
+        .rr{
+            text-align: center;
+        }
+        .a3{
+            background-color: lightgray;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            color: black;
+        }
+        .a3:hover{
+            background-color: burlywood;
+            color: brown;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: lightgray;
+            margin: auto;
+            margin-bottom: 50px;
+            box-shadow:20px 10px 15px orange ;
+        }
+        .box1{
+            box-sizing: border-box;
+            width: 300px;
+            height: 300px;
+            background-color: lightgray;
+            border-radius: 50%;
+            margin: auto;
+            margin-bottom: 50px;
+            box-shadow:290px -200px  0 200px orange ;
+        }
+        .p10{
+            font-size: 40px;
+            margin: 40px;
+            text-shadow:20px 6px 5px red , -20px 6px 3px blue;
+        }
+        .p11{
+            color: chocolate;
+            background-color: burlywood;
+            font-size: 35px;
+            border-radius: 10px;
+            padding: 20px;
+            text-decoration: underline;
+            text-transform: capitalize;
+            text-shadow: 10px 10px 10px rgb(109, 105, 105);
+        }
+        .p12{
+            text-indent: 30px; 
+            letter-spacing:5px;
+            font-size: 35px;
+            word-spacing:20px;
+        }
+        .p13{
+            font-size: 35px;
+            line-height: 50px;
+            /*line-height: 2 , 150%; */
+
+        }
+        .p14{
+            width: 250px;
+            font-size: 30px;
+            border: 1px solid #00ff00;  
+           /* white-space:nowrap ; */
+           white-space: initial; 
+         }
+         .p15{
+            background-color: lightgray;
+            font-size: 30px;
+            padding: 30px;
+           direction: rtl;
+            text-align:justify;
+         }
+         .parent{
+            color: #00ff00;
+         }
+         .parent a{
+            background-color: lightgray;
+            text-decoration: none;
+            color: black;
+            display: inherit;
+         }
+         .parent2{
+            color: rebeccapurple;
+         }
+         .parent2 button{
+            color: inherit ;
+         }
+         .container10{
+            width: 150px;
+            height: 100px;
+            background-color: lightgrey;
+            text-align: center;
+            margin: 20px;
+            direction: rtl;
+         }
+         .container10 div{
+            display: inline-block;
+         }
+         .child6{
+            width: 45px;
+            height: 100px;
+            background-color: red;
+         }
+         .child4{
+            width: 45px;
+            height: 100px;
+            background-color: green;
+         }
+         .child5{
+            width: 45px;
+            height: 100px;
+            background-color: blue;
+         }
+    </style>
+</head>
+<body>
+    <h1>Border style</h1>
+    <div class="container">
+        <p class="p1">this is a paragragh</p>
+        <p class="p1">this is a paragragh</p>
+    </div>
+    <div class="container1">
+        <p class="p2">This is a paragragh</p>
+        <p class="p2">Ut eu facilisis justo. 
+            Maecenas id ligula condimentum, posuere diam eu, sodales est.
+            Suspendisse potenti. Quisque semper ex a porttitor euismod. 
+            Ut sollicitudin, turpis nec finibus pellentesque, mi mi dignissim nulla, id egestas nulla nunc in tellus.
+            Aliquam leo neque, gravida quis consectetur ac, luctus non mi. Vivamus condimentum magna leo, eu consequat metus porttitor ac.
+            Curabitur eu libero vitae metus ullamcorper iaculis vel at sapien. Suspendisse potenti. Praesent efficitur nisi risus, eget aliquam sem tempor sed.
+            Aenean cursus tempor dapibus. Nam in magna ac ligula mollis porta et et tortor.
+            Donec nec diam in felis pellentesque ornare ut ac purus. Aenean eget nulla eu massa fermentum fringilla vel nec purus. Aenean risus quam, mattis eget tristique a, rhoncus vel elit. 
+            Ut ac luctus eros, eget suscipit purus.</p>
+    </div>
+    <div class="container2">
+        <p class="p3">this is a paragragh</p>
+    </div>
+    <div class="inline-block">
+        <h1>This is a heading</h1>
+        <p class="p4">this is a <span class="s">paragragh</span>. </p>
+        <p class="p4">this is a paragaragh.</p>
+        <b class="b1">HTML</b> <b class="b1">HTML</b> <b class="b1">HTML</b>  
+        <ol class="list">
+            <li class="l">Coffee</li>
+            <li class="l">tea</li>
+            <li class="l">Milk</li>
+        </ol>
+        <a href="https://google.com" class="a1">Google</a>
+        <a href="https://google.com" class="a1">Google</a>
+        <a href="https://google.com" class="a1">Google</a>
+    </div>
+    <div class="container3">
+        <h1> This is a heading!!</h1>
+        <p><span class="Lorem">Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit. 
+           Hic doloremque voluptatibus corrupti, fuga aut numquam dicta rerum, natus error minima esse atque,
+           dolore neque explicabo temporibus animi itaque ad blanditiis.</p>
+    </div>
+    <div class="container3">
+        <h1> This is a heading!!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+           Hic doloremque voluptatibus corrupti, fuga aut numquam dicta rerum, natus error minima esse atque,
+           dolore neque explicabo temporibus animi itaque ad blanditiis.</p>
+    </div>
+    <div class="display">
+        <p class="p5">this is a pragaragh</p>
+        <p class="p5">this is a paragragh</p>
+        <p class="p6">this is a pragaragh</p>
+        <p class="p7">this is a paragragh</p>
+        <p class="p8">this is a <span class="p88">paragragh</span></p>
+        <a href="" class="a2">google</a>
+        <a href="" class="a2">google</a>
+    </div>
+    <p class="p9">This is a paragragh</p>
+    <div class="d1">
+        <a href="">google</a>
+        <a href="">google</a>
+    </div>
+    <div class="father">
+        <div class="child">
+
+        </div>
+    </div>
+    <div class="father1">
+        <div class="child1">
+
+        </div>
+        <div class="child1"></div>
+    </div>
+    <div class="links">
+        <a href="https://google.com" class="link1">google.com</a>
+        <a href="" class="link1">yahoo</a>
+    </div>
+    <ul class="nav">
+        <li class="rr"><a href="" class="a3">Home</a></li>
+        <li class="rr"><a href="" class="a3">News</a></li>
+        <li class="rr"><a href="" class="a3">Contact me</a></li>
+        <li class="rr"><a href="" class="a3">About me</a></li>
+    </ul>
+    <div class="box">
+
+    </div>
+    <p class="p10"> This is a paragraghe</p>
+    <div class="box1">
+
+    </div>
+    <p class="p11">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic temporibus, 
+       beatae, atque animi aliquid quasi, iste assumenda ratione fuga error ipsum cupiditat 
+       blanditiis praesentium totam similique aspernatur quaerat cum deserunt.</p>
+    <p class="p12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic temporibus, 
+    beatae, atque animi aliquid quasi, iste assumenda ratione fuga error ipsum cupiditat 
+    blanditiis praesentium totam similiq</p>
+    <p class="p13">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic temporibus, 
+        beatae, atque animi aliquid quasi, iste assumenda ratione fuga error ipsum cupiditat 
+        blanditiis praesentium totam similique aspernatur quaerat cum deserunt.ue aspernatur quaerat cum deserunt.</p>
+    <p class="p14">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident suscipit quos laudantium quis maxime quod neque
+         accusamus laborum voluptatem, cupiditate error consectetur magni quia nesciunt nemo cumque fugiat. Impedit, eligendi?
+         Accusantium eius, assumenda nihil, unde accusamus facilis deserunt fugiat impedit nesciunt sint necessitatibus? Nobis sapiente alias rerum officiis error cupiditate sint 
+         suscipit quo nihil reiciendis, minus neque omnis autem ab.</p>
+    <p class="p15">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+         چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
+         در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>    
+    <div class="parent">
+        <div class="child3">
+            <p>This is a paragraghe</p>
+            <a href="">Google</a>
+            <a href="">yahoo</a>
+            <p>This is a paragraghe</p>
+        </div>
+        <div class="child2">
+            <p>This is a paragraghe</p>
+        </div>
+    </div>
+    <div class="parent2">
+        <p>This is a paragraghe</p>
+        <button> Faezeh </button>
+    </div>
+    <div class="container10">
+        <div class="child6"></div>
+        <div class="child4"></div>
+        <div class="child5"></div>
+    </div>
+</body>
+</html>

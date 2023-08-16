@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family:'Byekan';
+    src: url('../fonts/Byekan.ttf') format('truetype'),
+         url('../fonts/Byekan.woff') format('woff');
+}
+
+@font-face {
+    font-family:'lalezar';
+    src: url('../fonts/lalezar.ttf') format('truetype'),
+         url('../fonts/lalezar.woff') format('woff');
+}
+
+body{
+    font-family: Byekan;
+
+}
+
+.header{
+    height: 600px;
+    background-image: url('../images/miniimage4/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+}
+
+.header .nav-list{
+    list-style-type: none;
+    
+    
+}
+
+.header .nav-list .nav-item{
+    display: inline-block;
+    margin: 20px;
+    padding: 15px;
+}
+
+.header .nav-list .nav-item .link1{
+    text-decoration: none;
+    color: white;
+    display:inherit;
+}
+
+.header .nav-list .nav-item .link1:hover{
+    text-decoration: none;
+    color: rgb(233, 217, 186);
+    display:inherit;
+    text-shadow: 0 0 15px orange;
+}
+
+.header .title{
+    font-family: lalezar;
+    font-size: 60px;
+    margin-top: 90px;
+}
+
+.header .title span{
+    color : orange;
+}
+
+.header .desc{
+    width: 450px;
+    height: 55px ;
+    margin: auto;
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0 , .5);
+    line-height: 55px;
+    border-radius:20px;
+    border: 1px solid white;
+}
+
+.members{
+    text-align: center;
+    padding: 50px 30px;
+}
+
+.member-list{
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+.member-item{
+    width: 350px;
+    display: inline-block;
+    margin: 10px;
+    box-shadow:0 0 10px #bbbbbb ;
+    border-radius: 20px;
+}
+
+.member-pic{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.member-name{
+    font-size: 25px;
+    margin-top: 5px;
+    font-family: lalezar;
+}
+
+.member-bio{
+    padding:20px;
+    text-align: justify;
+}
+
+.member-item:hover{
+    
+    box-shadow:0 0 20px #545151 ;
+}
+
+.about{
+    height:700px;
+    background-image: url('../images/miniimage4/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 55px ;
+    background-color: #555151;
+    background-blend-mode:multiply;
+}
+
+.circle{
+    height: 600px;
+    width: 600px;
+    margin: auto;
+    border-radius: 50%;
+    background-color: rgba(135, 135, 135 , .3);
+    color: rgb(201, 188, 188);
+    text-align: center;
+    padding: 120px 120px;
+}
+
+.circle p {
+    margin-top: 40px;
+    text-align: justify;
+}
+
+.circle h2{
+    font-size: 35px;
+}
+.footer{
+    height:250px;
+    background-color: rgb(192, 188, 188);
+    padding-top: 70px;
+    text-align: center;
+}
+.footer .social{
+    height: 100px;
+    background-color: gray;
+    padding-top: 10px;
+    
+}
+.footer .social-pic{
+    margin: 10px;
+    margin-left: 20px;
+    box-shadow: 0 0 20px white;
+    border-radius: 50%;
+}
+.footer p{
+    margin-top: 15px;
+}

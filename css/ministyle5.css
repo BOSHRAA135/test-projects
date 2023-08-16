@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'BYekan';
+    src: url("../fonts/Byekan.ttf") format('truetype'),
+         url("../fonts/Byekan.woff") format('woff');
+}
+
+body{
+    background-color: rgb(219, 201, 178);
+    font-family: BYekan;
+}
+
+.container{
+    width:700px;
+    height: 360px;
+   /* background-color:rgb(152, 103, 68); */
+    margin:100px auto;
+    box-shadow: 0 0 40px rgb(40, 40, 40);
+    border-radius:10px 25px 10px 25px;
+    position: relative;
+}
+
+.card{
+    width: 220px;
+    height: 360px;
+    position: absolute;
+    right:30px;
+    top: -30px;
+    box-shadow: 0 0 40px rgb(40, 40, 40);
+    border-radius: 10px 25px 10px 25px;
+    overflow: hidden;
+}
+
+.pic{
+    width: 100%;
+   
+}
+
+.bio{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    left: 40px;
+    top: 25px;
+    text-align: justify;
+    
+    font-size: 15px;
+    
+
+}
+
+.card p{
+    padding-right: 15px;
+    padding-top: 5px;
+    /*margin : 4px;*/
+}
+
