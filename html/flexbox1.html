@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>flexbox</title>
     <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
         .container{
             direction:ltr;
             width: 550px;
@@ -43,14 +48,80 @@
             height: 600px;
             border: 2px dotted red;
             display: flex;
-            flex-direction: column;
-            justify-content:space-between;
+            flex-direction: row;
+            justify-content:flex-end;
         }
         .item2{
             width: 100px;
             height: 100px;
             background-color: lightgray;
             margin: 5px;
+            font-size: 30px;
+        }
+        .container3{
+            direction: ltr;
+            width: 600px;
+            height: 600px;
+            border: 2px dotted red;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: baseline;
+        }
+        .item3{
+            box-sizing: border-box;
+            width: 100px;
+            height: 100px;
+            background-color: lightgrey;
+            margin: 5px;
+            font-size: 30px;
+        }
+        /* The first method
+            .container4{
+            box-sizing: border-box;
+            width: 600px;
+            height: 600px;
+            border: 2px dotted red;
+            margin-top: 20px ;
+            padding-top:250px;
+            text-align: center;
+        }
+        .item4{
+            width: 100px;
+            height: 100px;
+            background-color: lightgray;
+            font-size: 30px;
+            margin: auto;
+            line-height: 100px;
+        } // the second method
+        .container4{
+            box-sizing: border-box;
+            width: 600px;
+            height: 600px;
+            border: 2px dotted red;
+            display: flex;
+        }
+        .item4{
+            width: 100px;
+            height: 100px;
+            background-color: lightgray;
+            font-size: 30px;
+            
+        }*/
+        .container4{
+            box-sizing: border-box;
+            width: 600px;
+            height: 600px;
+            border: 2px dotted red;
+            display: flex;
+            justify-content:center ;
+            align-items: center;
+            margin: 30px;
+        }
+        .item4{
+            width: 100px;
+            height: 100px;
+            background-color: lightgray;
             font-size: 30px;
         }
     </style>
@@ -77,6 +148,16 @@
         <div class="item2">2</div>
         <div class="item2">3</div>
         <div class="item2">4</div>
+    </div>
+
+    <div class="container3">
+        <div class="item3" style="width: 150x;">1</div>
+        <div class="item3" style="width: 200px;">2</div>
+        <div class="item3" style="font-size: 60px;">3</div>
+        <div class="item3" style="text-align: center;">4</div>
+    </div>
+    <div class="container4">
+        <div class="item4">item</div>
     </div>
 </body>
 </html>
