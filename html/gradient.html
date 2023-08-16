@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gradient</title>
     <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
         .box{
             width: 450px;
             height: 200px;
@@ -31,6 +36,95 @@
             /*ackground:radial-gradient(circle at right top , deeppink , yellow 20%,lime) ;*/
             background: radial-gradient(circle at 100px 100px , deeppink, yellow 20% , lime);
         }
+        .box5{
+            width: 400px;
+            height: 150px;
+            background: repeating-linear-gradient(to right, deeppink 0%,yellow 20%);
+            margin: 30px;
+
+        }
+        .box6{
+            width: 300px;
+            height: 100px;
+            margin: 30px;
+            background: repeating-linear-gradient(to right,deeppink 0px,lime,yellow 150px);
+        }
+        .box7{
+            width: 400px;
+            height: 400px;
+            margin: 30px;
+            background: repeating-radial-gradient(circle,lime 0%,yellow 20%);
+        }
+        .blend{
+            width: 450px;
+            height: 450px;
+            background-image: url("../images/favicon.ico.png");
+            margin: 30px;
+            border: 2px dotted lightgray;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: blueviolet;
+            background-blend-mode:overlay;
+        }
+        .mix-blend{
+            width: 500px;
+            height: 500px;
+            background: url(../images/background-2.jpg);
+            background-size: cover;
+            position: relative;
+        }
+        h1{
+            font-size: 100px;
+            position: absolute;
+            top: 20px;
+            mix-blend-mode: overlay;
+        }
+        img{
+            width: 100%;
+            position: absolute;
+            top: 20px;
+            mix-blend-mode: overlay;
+        }
+        .box8{
+            width: 300px;
+            height: 300px;
+            background-color: orange;
+            margin: 30px;
+            clip-path: inset(10px 60px round 10px 70px) ;
+        }
+        .box9{
+            width: 300px;
+            height: 300px;
+            background: orange;
+            margin: 30px;
+            /*clip-path: circle(50px at 100px 50px); */
+            clip-path: circle(150px at top right);
+        }
+        .box10{
+            width: 300px;
+            height: 300px;
+            background-color: orange;
+            background-image: url("../images/miniimage5/prof-pic.jpeg");
+            margin: 30px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            clip-path:ellipse(50px 100px at center center);
+        }
+        .box11{
+            width: 300px;
+            height: 300px;
+            background-color: orange;
+            margin: 50px;
+            clip-path: polygon(50% 0 ,100% 100% ,0 100%);
+            clip-path: polygon(150px 0 ,300px 300px ,0 300px);
+        }
+        .box12{
+            width: 300px;
+            height: 300px;
+            background-image: url("../images/background-2.jpg");
+            margin: 50px;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        }
     </style>
 </head>
 <body>
@@ -40,5 +134,20 @@
     <div class="box2"></div>
     <div class="box3"></div>
     <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <div class="box7"></div>
+    <div class="blend"></div>
+    <div class="mix-blend">
+        <h1>This is a heading </h1>
+    </div>
+    <div class="mix-blend">
+        <img src="../images/favicon.ico.png" alt="">
+    </div>
+    <div class="box8"></div>
+    <div class="box9"></div>
+    <div class="box10"></div>
+    <div class="box11"></div>
+    <div class="box12"></div>
 </body>
 </html>
