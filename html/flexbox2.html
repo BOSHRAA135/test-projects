@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>flexbox2</title>
     <style>
-        *{
+        /* *{
             box-sizing: border-box;
             margin: 0;
             padding: 0;
@@ -15,7 +15,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-        }
+        }*/
         .container4{
             box-sizing: border-box;
             width: 300px;
@@ -32,11 +32,42 @@
             background-color: lightgray;
             font-size: 30px;
         }
+        .container1{
+            width: 500px;
+            height: 500px;
+            border: 2px dotted red;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            align-content: stretch;
+        }
+        .item1{
+            width: 100px;
+            height: 100px;
+            background-color: lightgray;
+            font-size: 30px;
+            line-height: 100px;
+        }
     </style>
 </head>
 <body>
     <div class="container4">
         <div class="item4">item</div>
+    </div>
+    <div class="container1">
+        <div class="item1" style="background-color: blue;">item</div>
+        <div class="item1" style="background-color: greenyellow;">item</div>
+        <div class="item1" style="background-color: purple;">item</div>
+        <div class="item1" style="background-color: deeppink;">item</div>
+        <div class="item1" style="background-color: burlywood;">item</div>
+        <div class="item1" style="background-color: red;">item</div>
+        <div class="item1" style="background-color: yellow;">item</div>
+        <div class="item1" style="background-color: orangered;">item</div>
+        <div class="item1" style="background-color: deeppink;">item</div>
+        <div class="item1" style="background-color: burlywood;">item</div>
+        <div class="item1" style="background-color: red;">item</div>
+        <div class="item1" style="background-color: yellow;">item</div>
+        <div class="item1" style="background-color: orangered;">item</div>
     </div>
 </body>
 </html>
