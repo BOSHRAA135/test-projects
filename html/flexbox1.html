@@ -124,6 +124,121 @@
             background-color: lightgray;
             font-size: 30px;
         }
+        .container5{
+            direction: ltr;
+            width: 700px;
+            height: 600px;
+            border: 2px dotted red;
+            display: flex;
+            flex-direction:row;
+        }
+        .item5{
+            width: 100px;
+            background-color: lightgrey;
+            height: 100px;
+            margin: 5px;
+            font-size: 35px;
+        }
+        .container6{
+            width: 400px;
+            display: flex;
+            border: 2px solid gray;
+            flex-direction: row;
+            margin: 30px;
+        }
+        .item6{
+            height: 100px;
+            width: 200px;
+            font-size:40px;
+            background-color: lightgray;
+            margin: 2px 0;
+            line-height: 100px;
+            text-align: center;
+           /* flex-shrink: 1;*/
+        }
+        .container7{
+            border: 2px solid gray;
+            display: flex;
+            flex-direction: row;
+        }
+        .item7{
+            width: 400px;
+           /* flex-basis:400px;*/
+            background-color: lightgray;
+            margin: 2px 0;
+            font-size: 40px;
+            line-height: 100px;
+            text-align: center;
+        }
+        .item7:nth-child(odd){
+            background-color: orange;
+        }
+        .container8{
+            border: 2px solid gray;
+            display: flex;
+            flex-direction: row;
+            margin: 30px;
+            width: 650px;
+        }
+        .item8{
+            background-color: lightgray;
+            font-size: 40px;
+            line-height:100px;
+            margin: 2px 0;
+            text-align: center;
+        }
+        .item8:nth-child(odd){
+            background-color: orange;
+        }
+        .item8:nth-child(1){
+            flex-basis: 100px;
+            flex-grow: 2;
+            flex-shrink: 1;
+        }
+        .item8:nth-child(2){
+            flex-basis: 100px;
+            flex-grow:1;
+            flex-shrink: 2;
+        }
+        .item8:nth-child(3){
+            flex-basis: 100px;
+            flex-grow: 2;
+            flex-shrink: 1;
+        }
+        .item8:nth-child(4){
+            flex-basis: 100px;
+            flex-grow: 1 ;
+            flex-shrink: 2;
+        }
+        .container9{
+            width: 600px;
+            height: 600px;
+            border: 2px solid gray;
+            display: flex;
+            flex-direction: row;
+            margin: 30px;
+            align-items: flex-start;
+        }
+        .item9{
+            flex-basis: 100px;
+            background-color: lightgray;
+            margin: 2px 0;
+            font-size: 40px;
+            text-align: center;
+            line-height: 100px;
+        }
+        .item9:nth-child(odd){
+            background-color: orange;
+        }
+        .item9:nth-child(1){
+            align-self: stretch;
+        }
+        .item9:nth-child(2){
+            align-self: center;
+        }
+        .item9:nth-child(4){
+            align-self: flex-end;
+        }
     </style>
 </head>
 <body>
@@ -158,6 +273,37 @@
     </div>
     <div class="container4">
         <div class="item4">item</div>
+    </div>
+    <div class="container5">
+        <div class="item5">1</div>
+        <div class="item5">2</div>
+        <div class="item5">3</div>
+        <div class="item5">4</div>
+        
+    </div>
+    <div class="container6">
+        <div class="item6" style="flex-shrink: 2;">1</div>
+        <div class="item6" style="flex-shrink: 1;">2</div>
+        <div class="item6" style="flex-shrink: 1;">3</div>
+        <div class="item6" style="flex-shrink: 1;">4</div>
+    </div>
+    <div class="container7">
+        <div class="item7">1</div>
+        <div class="item7">2</div>
+        <div class="item7">3</div>
+        <div class="item7">4</div>
+    </div>
+    <div class="container8">
+        <div class="item8">1</div>
+        <div class="item8">2</div>
+        <div class="item8">3</div>
+        <div class="item8">4</div>
+    </div>
+    <div class="container9">
+        <div class="item9">1</div>
+        <div class="item9">2</div>
+        <div class="item9">3</div>
+        <div class="item9">4</div>
     </div>
 </body>
 </html>
