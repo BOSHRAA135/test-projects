@@ -1,0 +1,219 @@
+@import url(http://awebfont.ir/css?id=1116);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:'B Yekan', tahoma, Arial ;
+}
+
+.container{
+    margin: 0 auto;
+    width: 1400px;
+}
+.header_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.headr_right{
+    display: flex;
+}
+.menu_list{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+
+}
+.menu_item{
+    padding:10px 20px;
+    font-size:17px;
+}
+.menu_list a{
+    text-decoration: none; 
+    color:#999;
+}
+.menu_list a:hover{
+    color:#288ed9;
+}
+.header_left a{
+    text-decoration: none;
+    padding: 10px 30px;
+    color: #288ed9;
+    font-size:17px;
+}
+.header_left .header_login{
+    background-color: #288ed9;
+    color: #fff;
+    border-radius:30px;
+}
+.header_bottom{
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+}
+.header_bottom_right{
+    width: 40%;
+}
+.title{
+    margin: 50px 0 10px;
+    color: #288ed9;
+}
+.desc{
+    font-size: 17px;
+    margin-bottom:15px;
+    color: #288ed9;
+}
+.info{
+    text-align: justify; 
+    color: #666;
+    line-height:27px;
+    font-size: 17px;
+}
+
+.header_bottom_left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:60%;
+}
+.btns{
+    display: flex;
+    align-items: center;
+}
+.btn{
+    margin-top: 15px;
+    display: flex;
+    background-color: #288ed9;
+    width: 140px;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.btn:hover{
+    background-color: #d6eeff;
+    color: #288ed9;
+}
+.btn .link{
+    text-decoration: none; 
+    color: inherit;
+    padding: 10px 0;
+    padding-right: 10px;
+    font-size: 17px; 
+}
+.btn .material-symbols-outlined{
+    padding: 10px 6px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.btn1{
+    margin-top: 17px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #d6eeff;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    width: 55px;
+    padding: 3px;
+    
+}
+.btn1:hover{
+    background-color: #a4d7fc;
+}
+.btn1 .material-symbols-outlined{
+    font-size: 40px;
+    color: #288ed9;
+}
+.host_section{
+    background: linear-gradient(to bottom,rgba(214,238,255,0) 0,#d6eeff 100%);
+    margin-top: 100px;
+}
+.host_section_title{
+    text-align: center;
+    /*padding-top: 100px;*/
+}
+.host_list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /* padding:100px 0;*/
+}
+.host_item{
+    margin:100px 10px;
+    padding:40px 15px 20px;
+    border: 1px solid lightgray;
+    border-radius:10px;
+    box-shadow: 0 10px 30px 0 rgba(0,91,159,.2)!important;
+    text-align:justify;
+    color: #666;
+    position: relative;
+}
+.host_item_title{
+    margin: auto;
+    position: absolute;
+    top: -25px;
+    right: 0;
+    left: 0;
+    text-align: center;
+    background-color: #288ed9;
+    color: #fff;
+    width: 150px;
+    border-radius: 25px;
+    padding: 5px 10px;
+}
+.feature{
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 50px ;
+}
+.feature_right{
+    width: 40%;
+}
+.feature_right_title{
+    margin: 50px 0 10px;
+    color: #288ed9;
+}
+.feature_right_desc{
+    font-size: 17px;
+    margin-bottom: 15px;
+    color: #288ed9;
+}
+.feature_right_info{
+    text-align: justify;
+    color: #666;
+    line-height:27px;
+    font-size: 17px;
+}
+.feature_left{
+    display: flex;
+    padding-right:200px;
+    align-items: center;
+    width: 60%;
+}
+.feature_right_img{
+    margin-top: 50px ;
+    display: flex;
+    padding-left:100px;
+    align-items: center;
+    width: 50%;
+}
+.footer_section{
+    border-top: 1px solid #999;
+    text-align: center;
+    padding: 50px 0;
+    color: #999;
+}
+.socials i{
+    
+    font-size: 25px;
+    padding: 10px;
+}
