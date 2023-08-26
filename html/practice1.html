@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice 1 </title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .menu{
+            height: 80px;
+            border: 2px solid red;
+            display: flex;
+          /*  flex-direction: row; */
+            justify-content: space-between;
+        }
+        .left{
+            width:500px;
+            display:flex;
+            align-items: center;
+        }
+        .left ul{
+            list-style-type: none;
+            display: flex;
+            text-align: center;
+        }
+        .left ul li a{
+            display: inline-block; 
+            width: 100px;
+            height:50px;
+            text-decoration: none;
+            color: black;
+            background-color: red;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 20px;
+        }
+        .right{
+            width: 200px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            text-align: center;
+        }
+        .right a{
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            text-decoration: none;
+            background-color: red;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 20px;
+            color: black;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="left">
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">contact me</a></li>
+                <li><a href="">about me</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <a href="">login</a>
+        </div>
+    </div>
+</body>
+</html>
