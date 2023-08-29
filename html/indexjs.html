@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>start</title>
+    <style>
+        .container{
+            border: 1px solid lightgray;
+            border-radius: 20px;
+            width: 50%;
+            padding: 10px;
+            margin: 10px;
+        }
+        button{
+            background-color:#04AA6D;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        button:hover{
+            background-color: #34cb93;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>What can JavaScript do?</h2>
+        <p id="demo">JavaScript can change HTML content.</p>
+        <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'> Click Me!</button>
+    </div> 
+    <div class="container">
+        <h2>JavaScript Can change HTML attribute values.</h2>
+        <button type="button" onclick="document.getElementById('myimg').src='../images/pic_bulbon.gif'">Turn on the light</button>
+        <img src="../images/pic_bulboff.gif" alt="" id="myimg">
+        <button type="button" onclick="document.getElementById('myimg').src='../images/pic_bulboff.gif'">Turn off the light</button>
+    </div>
+    <div class="container">
+        <p id="Demo">JavaScript can change the style of an HTML element.</p>
+        <button type="button" onclick="document.getElementById('Demo').style.fontSize='35px'">Click me!</button>
+    </div>
+    <div class="container">
+        <p id="demo1"> JavaScript can hide HTML element!</p>
+        <button type="button" onclick="document.getElementById('demo1').style.display='none'">Click Me!</button>
+        <button type="button" onclick="document.getElementById('demo1').style.display='block'">Click Me!</button>
+    </div>
+
+</body>
+</html>
