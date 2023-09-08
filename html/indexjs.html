@@ -22,6 +22,24 @@
         button:hover{
             background-color: #34cb93;
         }
+        .div1{
+            background-color: aqua;
+            border:2px solid red;
+            border-radius: 10px;
+            max-width: 100px;
+            padding: 10px;
+            margin:10px 0;
+        }
+        #demo2{
+            color: #04AA6D;
+            width: 300px;
+            height: 100px;
+            line-height: 100px;
+            background-color: lightgray;
+            text-align: center;
+            border-radius: 10px;
+
+        }
     </style>
 </head>
 <body>
@@ -61,6 +79,41 @@
         <button type="button" onclick="window.print()">Try it!!</button>
         <!--  <button type="button" onclick="print()">Try it!!</button>-->
     </div>
-    <script src="../js/app.js"></script>
+    <div class="container">
+        <h1 id="demo5">This is a heading</h1>
+        <button type="button" onclick="document.getElementById('demo5').innerHTML='Study together'">Click me!</button>
+        <div onclick="document.getElementById('demo5').innerHTML='play together'" class="div1">Click on me!</div>
+    </div>
+    <div class="container">
+        <h1 id="demo2">This is a heading</h1>
+        <button type="button" onclick="document.getElementById('demo2').style.backgroundColor='red';">red</button>
+        <button type="button" onclick="document.getElementById('demo2').style.backgroundColor='purple';">purple</button>
+        <button type="button" onclick="document.getElementById('demo2').style.backgroundColor='pink'">pink</button>
+        <hr>
+        <button type="button" onclick="document.getElementById('demo2').style.fontSize='20px';">20px</button>
+        <button type="button" onclick="document.getElementById('demo2').style.fontSize='30px';">30px</button>
+        <button type="button" onclick="document.getElementById('demo2').style.fontSize='40px';">40px</button>
+        <hr>
+        <button type="type" onclick="document.getElementById('demo2').style.border='2px solid red'">border</button>
+        <button type="button" onclick="document.getElementById('demo2').style.border='2px dotted red';">border1</button>
+        <button type="button" onclick="document.getElementById('demo2').style.border='2px dashed red';">border2</button>
+        <button type="button" onclick="document.getElementById('demo2').style.border='none';">bordernone</button>
+        <hr>
+        <button type="button" onclick="myfunction2()">Click me!!</button>
+    </div>
+    <div class="container">
+        <button type="button" onclick="document.getElementById('Image').src='../images/pic_bulbon.gif'">Turn On the light</button>
+        <img src="../images/pic_bulboff.gif" alt="The light Bulb" id="Image">
+        <button type="button" onclick="document.getElementById('Image').src='../images/pic_bulboff.gif'">Turn off the light</button>
+    </div>
+    <!--
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+    -->
+
+    
+    <script src="../js/javascript.js"></script>
 </body>
 </html>
