@@ -257,3 +257,140 @@ console.log( 2 != "2");
 
 console.log(2 !== 2);
 console.log( 2 !== "2");
+
+//condition
+//Example 1
+var gender = 'female';
+if( gender == 'male'){
+    console.log('تو پسری');
+}
+if (gender == 'female'){
+    console.log('تو دختری')
+}
+//Example 2
+var age = 25;
+if(age > 18 && gender == 'female'){
+    console.log("welcome to my site")
+}
+// Example 3
+var grade = 34;
+if (grade > 10){
+    console.log( grade + " > 10")
+}
+if(grade > 20){
+    console.log(grade + " > 20");
+}
+if(grade > 30){
+    console.log(grade + " > 30");
+}
+if (grade > 40){
+    console.log(grade + " > 40");
+}
+if (grade > 50){
+    console.log(grade + " > 50");
+}
+// else
+var num = 20;
+if (num % 2 == 0 ){
+    console.log( num + " is even");
+}
+else{
+    console.log(num + " is odd");
+}
+console.log("-----------------------");
+var Age = 25;
+if ( Age > 18 ){
+    console.log("+18");
+} 
+else{
+    console.log("-18");
+}
+console.log("----------------------");
+var num1 = -10;
+if (num1 > 0 ){
+    console.log(num1);
+}
+else{
+    console.log(-num1);
+}
+console.log("---------------------");
+var num2 = 60;
+if(num2 > 10){
+    console.log(num2 + " > 10 ");
+}
+else if(num2 > 20){
+    console.log(num2 + " > 20 ");
+}
+else if(num2 > 30){
+    console.log(num2 + " > 30 ");
+}
+else if(num2 > 40){
+    console.log(num2 + " > 40 ");
+}
+else if(num2 > 50){
+    console.log(num2 + " > 50 ");
+}
+else{
+    console.log(" ****** ");
+}
+console.log("---------");
+// Example 4
+if(gender == "male"){
+    if( age > 18){
+        console.log("The boy's age is older than 18");
+    }
+    else{
+        console.log("The boy's age is younger than 18");
+    }
+}
+else{
+    if( age > 18){
+        console.log("The girl's age is older than 18");
+    }
+    else{
+        console.log("The girl's age is younger than 18");
+    }
+}
+//switch
+var day = 4;
+switch (day){
+    case 1:
+        console.log("Today is Saturday");
+    break;
+    case 2:
+        console.log("Today is Sunday");
+    break;
+    case 3:
+        console.log("Toaday is Monday");
+    break;
+    case 4:
+        console.log("Today is Tuesday");
+    break;
+    case 5:
+        console.log("Today is Wednesday");
+    break;
+    case 6:
+        console.log("Today is Thursday");
+    break;
+    case 7:
+        console.log("Today is Friday");
+    break;
+    default:
+        console.log("invalid");
+} 
+if(day == 1)
+    console.log("Today is Saturday");
+else if(day == 2)
+    console.log("Today is Sunday");
+else if(day == 3)
+    console.log("Toaday is Monday");
+else if(day == 4)
+    console.log("Today is Tuesday");
+else if(day == 5)
+    console.log("Today is Wednesday");
+else if(day == 6)
+    console.log("Today is Thursday");
+else if(day == 7)
+    console.log("Today is Friday");
+else
+    console.log("invalid");
