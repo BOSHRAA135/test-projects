@@ -397,11 +397,19 @@ else
 //loop  
 var i = 1;
 while(i <= 10){
-    console.log('kiss u<33');
+    console.log('JavaScript');
     i++;
 }
 var num = 1 ;
 while (num < 10){
     console.log(num);
+    num++;
+}
+console.log("-------------");
+var num4 = 10 ;
+while(num <= 100){
+    if(num % 7 == 0){
+        console.log(num);
+    }
     num++;
 }
