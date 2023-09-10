@@ -394,3 +394,14 @@ else if(day == 7)
     console.log("Today is Friday");
 else
     console.log("invalid");
+//loop  
+var i = 1;
+while(i <= 10){
+    console.log('kiss u<33');
+    i++;
+}
+var num = 1 ;
+while (num < 10){
+    console.log(num);
+    num++;
+}
