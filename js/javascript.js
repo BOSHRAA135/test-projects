@@ -406,10 +406,80 @@ while (num < 10){
     num++;
 }
 console.log("-------------");
-var num4 = 10 ;
-while(num <= 100){
-    if(num % 7 == 0){
-        console.log(num);
+var num4 = 100;
+while(num4 <= 200){
+    if(num4 % 7 == 0 && num4 % 4 == 0){
+        console.log(num4);
     }
-    num++;
+    num4++;
+}
+var sum = 0 , i = 1;
+while (i <=5){
+    sum += i;
+    i++;
+}
+console.log("sum = " + sum);
+console.log(i);
+
+// while && do-while
+var num5 = 1;
+while (num5 <=5){
+    console.log(num5);
+    num5++;
+}
+console.log("---------------");
+var num5 = 1;
+do {
+    console.log(num5);
+    num5++;
+}
+while(num5 <= 5);
+console.log(num5);
+console.log("----------------------");
+var num6 = 5;
+while(num6 >= 1){
+    console.log(num6);
+    num6--;
+}
+console.log("-----------"); 
+var num6 = 5;
+do {
+    console.log(num6);
+    num6--;
+}
+while(num6 >= 1);
+// practice
+console.log("------3-----");
+var number = 1 ;
+while (number <=5){
+    console.log(number);
+    number++;
+}
+console.log("------3------");
+var number = 5;
+while( number >= 1){
+    console.log(number);
+    number--;
+}
+console.log("------4------");
+var number = 1;
+do{
+    console.log(number);
+    number++;
+}
+while(number <=5);
+console.log("-------4--------");
+var number = 5;
+do{
+    console.log(number);
+    number--;
+}
+while(number>=1);
+console.log("------5-------");
+for(var i = 1 ; i <=5 ; i++ ){
+    console.log(i);
+}
+console.log("-------5-------");
+for (var number = 5 ; number >=1; number--){
+    console.log(number);
 }
