@@ -482,4 +482,45 @@ for(var i = 1 ; i <=5 ; i++ ){
 console.log("-------5-------");
 for (var number = 5 ; number >=1; number--){
     console.log(number);
+
 }
+console.log("---------6----------");
+var sum= 0;
+//var sum = 0 , num ; 
+for(var num = 10; num <=90; num++){
+    sum += num;
+}
+console.log(" sum = " + sum);
+//example 5
+var counter = 0 , num = 5;
+for (var i = 1; i <= num ; i++ ){
+    if(num % i == 0)
+    counter++;
+}
+if(counter == 2)
+    console.log("prime number");
+else
+    console.log("complex number");
+//example 6
+var num6 = 20; 
+while( num6 >= 1){
+    console.log(num6);
+    num6--;
+}  
+console.log('----------7--------');
+var num6 = 20;
+do {
+    console.log(num6);
+    num6--;
+}  
+while(num6 >= 1);
+console.log("---------7---------");
+for(var num6 = 20; num6 >= 1 ; num6-- ){
+    console.log(num6);
+}
+// infinite loop 
+// var num = 1;
+// while(true){
+//     console.log(num);
+//     num++;
+// } 
