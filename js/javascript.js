@@ -524,3 +524,125 @@ for(var num6 = 20; num6 >= 1 ; num6-- ){
 //     console.log(num);
 //     num++;
 // } 
+while(0){
+    console.log("JavaScript");
+}
+console.log(Boolean(" "));
+if(' '){
+    console.log("javaScript");
+}
+//false
+console.log(Boolean(0));
+console.log(Boolean(-0));
+console.log(Boolean(''));
+console.log(Boolean(undefined));
+var zo ;
+console.log(typeof zo);
+console.log(Boolean(zo));
+if (zo){
+    console.log("javascript");
+}
+var jj = NaN; // Not a Number
+var div = "JavaScript"/ 5;
+console.log(div);
+console.log(Boolean(NaN));
+if(NaN){
+    console.log("javaScript");
+}
+if("AAAa"){
+    console.log("javaScript");
+}
+// implicit conversion
+console.log('3'+ 2);
+console.log('3'+ true);
+console.log('3'+ undefined);
+//---------------------------------
+console.log('4' - 2);
+console.log('4' * 2);
+console.log('10' / 2);
+//---------------------------------
+console.log("JavaScript" - "java");
+console.log("javaScript" * 5);
+//---------------------------
+console.log('4' - true);
+console.log('4' + true);
+console.log(4 + true);
+console.log('4' * true);
+console.log('4' * false);
+//-----------------------------
+console.log(4 + null);
+console.log(4 - null);
+console.log(4 * null);
+//-------------------------------
+console.log(undefined + 2);
+console.log(undefined + true);
+console.log(undefined + null);
+//------------------------------48
+console.log("-----48-----")
+var a = "JavaScript";
+console.log(typeof a);
+
+var b = Number(a);
+console.log(typeof b);
+
+// String --> Number
+console.log(Number('3.14'));
+console.log(Number(''));
+console.log(Number(' '));
+console.log(Number('javaScript'));
+console.log(Number('123Script'));
+console.log(Number('123 48'));
+
+// number --> string 
+console.log(String(100));
+console.log(String(3.14));
+console.log(String(100 + 23));
+
+// Boolean --> number
+console.log(Number(true));
+console.log(Number(false));
+
+// Number --> Boolean 
+console.log(Boolean(100));
+console.log(Boolean(0));
+console.log('-----------------');
+// String --> boolean
+console.log(Boolean('0'));
+console.log(Boolean('JavaScript'));
+console.log(Boolean(''));
+console.log(Boolean(' '));
+//--------------------------
+console.log('------------------');
+console.log(Number(' '));
+console.log(Boolean(' '));
+if(''){
+    console.log('JavaScript')
+}
+//------------------------------------
+//Example 6 again 
+for(var i = 1 ; i <= 10 ; i++){
+    console.log("JavaScript");
+    if(i == 5){
+        break;
+    }
+}
+var counter1 = 0 , num = 6;
+for(var i =1 ; i <= num ; i++){
+    if(num % i == 0 ){
+        counter1++;
+    }
+}
+if(counter1 == 2){
+    console.log("prime number");
+}
+else {
+    console.log("complex number");
+}
+
+// Example 7
+for(var i = 1 ; i <= 10 ; i++){
+    if(i % 2 == 0 ){
+        continue;
+    }
+    console.log(i);
+}
