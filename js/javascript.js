@@ -646,3 +646,72 @@ for(var i = 1 ; i <= 10 ; i++){
     }
     console.log(i);
 }
+// Example 8
+for(var a = 1 ; a <= 2 ; a++){
+    console.log('outer' + a);
+    for(var b =1 ; b <= 3 ; b++){
+        console.log('inner'+b);
+    }
+}
+// var str = ''; 
+// str = str + '*'; // str += '*';
+// str = str + '*'; 
+// str = str + '*';
+// str = str + '\n';
+// str = str + '*';
+// str = str + '*';
+// str = str + '*';
+// console.log(str); 
+console.log("-------------------------");
+var str = '';
+for(var i = 1 ; i <= 2 ; i++){
+    for(var j = 1 ; j <=3 ; j++){
+        str = str + '*';
+    }
+    str = str + '\n';
+}
+console.log(str);
+console.log('practice 1 -------------------');
+// practice 1
+var str = '';
+for(var i = 1 ; i <=5; i++){
+    for(var j = 1 ; j <= i ; j++ ){
+        str = str + '*';
+    }
+    str = str + '\n'
+}
+console.log(str);
+console.log(' practice 2 -----------------------');
+var str = '';
+for(var i = 1 ; i <= 5 ; i++){
+    for(var j = 5 ; j >= i ; j-- ){
+        str = str + '*';
+    }
+    str = str + '\n';
+}
+console.log(str);
+console.log(' practice 3 -----------------------');
+var str = '';
+for(var i = 1 ; i <=5 ; i++){
+    for(var j = 5; j > i ; j-- ){
+        str = str + ' ';
+    }
+    for(var s = 1 ; s <= i ; s++){
+        str = str + '*';
+    }
+    str = str + '\n';
+}
+console.log(str);
+console.log('practice 4 -----------------------');
+var str = '';
+for(var i = 1 ; i <= 5 ; i++){
+    for(var s = 1 ; s < i; s++){ 
+        str = str + ' ';
+    }
+    for( var j = 5; j >= i ; j--){
+        str = str + '*';
+    }
+   
+    str = str + "\n";
+}
+console.log(str);
