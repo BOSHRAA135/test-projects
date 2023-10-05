@@ -1207,3 +1207,108 @@ firstfunction(secondFunction);
 function secondFunction(){
     console.log("second function");
 }
+
+var a = 5;
+function myFunction4(){
+    var b = 10;
+}
+//console.log(b); //Error
+
+function myFunction5(){
+    console.log(a);
+    if(a < 6 ){
+        console.log(a);
+    }
+}
+myFunction5();
+
+function myFunction6(){
+    let c = 8;
+    if(c>4){
+        console.log(c);
+    }
+} //function Scope
+myFunction6();
+console.log("-----------------------------------------");
+function myFunction7(){
+
+    if(true){
+        const yt = 9;
+    }
+    //console.log(yt);
+}
+myFunction7();
+console.log("-----------------------------------------");
+var firstname;
+console.log(firstname);
+firstname = "milad";
+
+
+var myfunction4 = function(){
+    console.log("my function");
+}
+myfunction4();
+// function hoisting
+myfunction5();
+function myfunction5(){
+    console.log("java sctipt");
+}
+
+// let , const , var 90
+var firstname1 = "Ali";
+console.log(firstname1);
+ 
+let firstname2 = "mmmm";
+console.log(firstname2);
+
+const firstname3 = "HHHHH";
+console.log(firstname3);
+
+firstName1 = "milad";
+console.log(firstName1)
+
+function firstname12(){
+    var firstname11 = "---ali";
+    //console.log(firstname11);
+    return firstname11;
+    
+}
+firstname12();
+console.log(firstname12());
+// console.log(firstname11); // firstname11 is not defined
+function firstname13(){
+    firstname14 = "wwww";
+}
+firstname13();
+console.log(firstname14); //wwww
+
+function myFunction8(){
+    'use strict';
+    var first = "Nahid";
+    return first;
+}
+console.log(myFunction8());
+// objact 
+
+const Green = {
+    firstName0:'milad',
+    lastName0:'Maneee',
+    age:28,
+    gender:'male',
+    isMarried:false,
+    favorites:['music','coding'],
+    coding : function(){
+        return 'milad is coding ...';
+    },
+    grades : {
+        math : 20,
+        geometry : 16,
+        sport : 20,
+        arabic: 18
+    }
+}
+console.log(Green);
+console.log(Green.age);
+console.log(Green['lastName0']);
+console.log(Green.coding());
+console.log(Green.grades.geometry);
