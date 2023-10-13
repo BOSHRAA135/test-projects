@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript object</title>
+    <style>
+        .box1{
+            background-color: bisque;
+            width: 100px;
+            height: 100px;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+        .box3{
+            border-radius: 15px;
+        }
+        #box4{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            border-radius:5px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">this is a heading</h1>
+    <h1 id="heading">heading</h1>
+
+    <p class="p1">paragraph1</p>
+    <p class="p1">paragraph2</p>
+    <h2 class="p1">JavaScript</h2>
+    <p class="p2">paragraph3</p>
+    <p class="p2">paragraph4</p>
+
+    <div class="container">
+        <p class="child"> child 1 </p>
+        <!-- comment -->
+        <p class="child"> child 2 </p>
+        <p class="child"> child 3 </p>
+        <p class="child"> child 4 </p>
+    </div>
+    <a href="">link1</a>
+    <a href="">link2</a>
+    <a href="">link3</a>
+    <a href="">link4</a>
+
+    <p id="test">this is a paragraph</p>
+    <button type="button" onclick="changeText()">change text</button>
+    <p id="test1">this is a paragraph</p>
+
+    <img src="" alt="">
+    <div id="box" class="box1">javascript</div>
+    <button onclick="document.getElementById('box').className += ' box3'">change attribute value</button>
+
+    <div id="class" class="box2">Java</div>
+    <button type="button" onclick="change()">change Attribute class</button>
+
+    <div id="myid" class="myclass"></div>
+
+    <button onclick="document.body.style.backgroundColor ='yellow'">change css style</button>
+
+    <div id="box4"></div>
+    <button onclick="myfunction()">click on me!</button>
+
+    <button type="button" onclick="Random()">Generate New Random Color</button>
+    <script src="../js/Script.js"></script>
+
+
+</body>
+</html>

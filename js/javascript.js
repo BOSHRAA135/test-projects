@@ -1306,9 +1306,153 @@ const Green = {
         sport : 20,
         arabic: 18
     }
-}
+};
 console.log(Green);
 console.log(Green.age);
 console.log(Green['lastName0']);
 console.log(Green.coding());
 console.log(Green.grades.geometry);
+
+const blue ={};
+blue.name = "Negin";
+blue.age = '23';
+blue.Lastname = ' bahrami';
+blue.coding = function(){
+    return 'Negin is coding...';
+}
+console.log(blue);
+
+const black = {};
+const yellow = black;
+yellow.name = 'Nahid';
+console.log(black);
+
+const milad ={
+    FirstName : 'milad' , 
+    LastName : "Bahirami",
+    age : 25
+};
+
+console.log(milad);
+const Myobject = {...milad};
+console.log(Myobject);
+Myobject.FirstName = 'Ali';
+Myobject.favcolor = 'black';
+Myobject.age = 28;
+console.log(Myobject);
+console.log(milad);
+
+const pink = {
+    firstname:'Nahid',
+    lastname : 'jalaie',
+    age : 34,
+    favorites : ['art','music'],
+    fullname : function(){
+        return this.firstname + " " + this.lastname;
+    }
+};
+
+console.log(pink.fullname());
+
+// for-of
+
+let myArray = [5 , 20 , 15 , 18 , 21];
+for(let i = 0 ; i < myArray.length ; i++){
+    console.log(myArray[i]);
+}
+console.log('--------------------------------------');
+for(let element of myArray){
+    console.log(element);
+}
+
+let str3 = "milad barami";
+for(let i = 0 ; i < str3.length ; i++){
+    console.log(str3[i]);
+}
+console.log('--------------------------------------');
+for(let ch of str3){
+    console.log(ch);
+}
+console.log('--------------------------------------');
+const object ={
+    firstName : 'Sara',
+    lastName : 'Alipoor',
+    age : 23 
+}
+
+for (let key in object){
+    //console.log(key);
+   // console.log(object.key); undefined
+    //console.log(object[key]);
+    console.log(key +" => "+object[key]);
+}
+
+const nestedObject ={
+    flag : 'CA',
+    country : {
+        city : 'vancouver'
+    }
+};
+const ShallowClone = {...nestedObject}; //shallowclone
+console.log(nestedObject);
+console.log(ShallowClone);
+console.log("-------------------------------------");
+ShallowClone.flag = 'TW';
+ShallowClone.country.city = 'taipei';
+console.log(ShallowClone);
+console.log(nestedObject);
+console.log("-------------------------------------");
+const nested ={
+    flag : 'CA',
+    country : {
+        city : 'vancouver'
+    }
+};
+const deepClone = JSON.parse(JSON.stringify(nested)); //deepclone
+console.log(nested);
+console.log(deepClone);
+deepClone.flag = 'TW';
+deepClone.country.city = 'taipei';
+console.log("-----------2-------------------------");
+console.log(nested);
+console.log(deepClone);
+
+const donia = {
+    firstName : 'Donia',
+    lastName : "green",
+    age : 23
+};
+console.log(donia.firstName);
+console.log(donia.phoneNumber);
+
+console.log(donia.lastName == undefined);
+console.log(donia.carName == undefined);
+// in operator
+console.log('firstName' in donia);
+console.log('carname' in donia);
+
+// object comparison
+console.log("-------------------------");
+let num13 = 10;
+let num14 = 10;
+console.log(num13 == num14);
+const object1 ={
+    FirstName : 'milad' , 
+    LastName : "Bahirami",
+    age : 25
+};
+
+const object2 = object1;
+// const object2 = {
+//     FirstName : 'milad' , 
+//     LastName : "Bahirami",
+//     age : 25
+// };
+
+console.log(object1 == object2);
+console.log("-------------------------");
+let num15 = [10 , 12 , 16 , 20];
+let num16 = [10 , 12 , 16 , 20];
+
+
+console.log(num15 == num16);
