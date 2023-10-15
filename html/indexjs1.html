@@ -24,8 +24,25 @@
             background-color: aqua;
             border-radius:5px;
         }
+        #main{
+            width: 200px;
+            margin: 5px;
+            border: 2px solid red;
+            padding: 20px;
+            text-align: center;
+        }
+        .box4{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+        .box5{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
     </style>
-</head>
+</head> 
 <body>
     <h1 id="heading">this is a heading</h1>
     <h1 id="heading">heading</h1>
@@ -67,8 +84,20 @@
     <button onclick="myfunction()">click on me!</button>
 
     <button type="button" onclick="Random()">Generate New Random Color</button>
+    <button type="button" onclick="changeColor()">change color</button>
+    <div id ="main">JavaScript
+        <p>Java</p>
+        <p>Python</p>
+        <p>C++</p>
+    </div>
+    <div id="main1" class="box10 box11 box12"></div>
+    <div id="main2" class="box4">
+        <p>JavaScript</p>
+        <p>JavaScript</p>
+        <p>JavaScript</p>
+    </div>
+    <button>button</button>
     <script src="../js/Script.js"></script>
-
-
+    <script src="../js/events.js"></script>
 </body>
 </html>

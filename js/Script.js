@@ -112,6 +112,7 @@ function Random(){
     const RandomColor = Math.floor(randomNumber).toString(16);
     document.body.style.backgroundColor = '#' + RandomColor;
 }
+//116
 // floor() Method
 console.log(Math.floor(1.1));
 // console.log(Math.floor(1.2));
@@ -132,5 +133,73 @@ console.log(Math.floor(0.576));
 
 console.log(Math.floor(-5.1));
 
-let random = Math.random()*255;
+//rgb(Math.random()*256,Math.random()*256,Math.random()*256)
+let random = Math.random()*256;
 console.log(random);
+function randNum(){
+    return Math.floor(Math.random()*256);
+}
+function randColor(){
+    return `rgb(${randNum()},${randNum()},${randNum()})`;
+}
+console.log(randColor());
+function changeColor(){
+    document.body.style.backgroundColor = randColor();
+}
+let firstName = "milad";
+console.log(firstName);
+console.log("your name is : firstName")
+console.log('your name is : ' + firstName);
+console.log(`your name is : ${firstName}`); // backtick
+
+function randnum(min , max ){
+    let x = max - min ; 
+    return Math.floor(min + Math.random() * x);
+}
+console.log(randnum(80 , 92));
+
+let div1 = document.getElementById('main');
+div1.style.backgroundColor = "lightgray";
+console.log(div1.style.backgroundColor);
+console.log(div1.style.width);
+let elementstyle = getComputedStyle(div1); // important
+console.log(elementstyle.width);
+console.log(elementstyle.border);
+console.log(elementstyle.padding);
+console.log(elementstyle.textAlign);
+console.log(elementstyle.color);
+console.log(elementstyle.direction);
+console.log(elementstyle.borderRadius);
+//119
+let div2 = document.getElementById('main1');
+console.log(div2.id);
+console.log(div2.className);
+console.log(div2.classList);
+
+div2.classList.add('box13','box14');
+console.log(div2.classList);
+div2.classList.remove('box12','box8');
+console.log(div2.classList);
+div2.classList.toggle('box13');
+console.log(div2.classList);
+div2.classList.replace('box14','box12');
+console.log(div2.classList);
+console.log(div2.classList.contains('box10'));
+console.log(div2.classList.contains('box2'));
+//120
+console.log(div1.innerHTML);
+console.log(div1.outerHTML);
+
+let div3 = document.getElementById('main2');
+console.log("-------------");
+console.log(div3.outerHTML);
+// div3.classList.replace('box4' , 'box5');
+div.outerHTML = `${div3.classList.replace('box4','box5')}`;
+// div3.outerHTML = `
+// <div id='main2' class="box5">
+// <p>JavaScript</p>
+// <p>JavaScript</p>
+// <p>JavaScript</p>
+// </div>
+// `;
+console.log(div3.outerHTML);
