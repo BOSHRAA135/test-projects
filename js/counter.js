@@ -1,11 +1,11 @@
 const currentNum = document.getElementById('number');
-const increseBtn = document.getElementById('increase');
+const increaseBtn = document.getElementById('increase');
 const resetBtn = document.getElementById('reset');
-const decresBtn = document.getElementById('decrease');
+const decreasBtn = document.getElementById('decrease');
 
 let newNum;
 //increase
-increseBtn.addEventListener('click',function(){
+increaseBtn.addEventListener('click',function(){
     newNum = Number(currentNum.innerHTML) + 1;
     currentNum.innerHTML = newNum;
     currentNum.style.color = 'green';
@@ -16,7 +16,7 @@ resetBtn.addEventListener('click',function(){
     currentNum.style.color = 'white';
 });
 //decrease
-decresBtn.addEventListener('click',function(){
+decreasBtn.addEventListener('click',function(){
     newNum = Number(currentNum.innerHTML) - 1;
     currentNum.innerHTML = newNum;
     currentNum.style.color = 'red';
