@@ -28,3 +28,33 @@ button2.addEventListener('click',function(){
 });
 
 // button2.addEventListener('click',() => document.body.style.backgroundColor = 'orange');
+//Mouse events / Click
+let button3 = document.querySelector('#button3');
+button3.addEventListener('click', function(){
+    console.log('click');
+});
+let button4 = document.querySelector('#button4');
+button4.addEventListener('click',function(){
+    console.log('click');
+});
+button4.addEventListener('dblclick',function(){
+    console.log('double click');
+});
+
+let button5 = document.querySelector('#button5');
+button5.addEventListener('mousedown',function(){
+    document.body.style.backgroundColor = 'red';
+    console.log('mousedown');
+});
+button5.addEventListener('mouseup',function(){
+    document.body.style.backgroundColor = 'yellow';
+    console.log('mouseup');
+});
+button5.addEventListener('click',function(){
+    document.body.style.backgroundColor = 'purple';
+    console.log('click');
+});
+button5.addEventListener('contextmenu',function(){
+    console.log('right click');
+});
+

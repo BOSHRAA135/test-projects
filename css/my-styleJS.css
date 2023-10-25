@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#1d1d1d;
+    font-family:sans-serif;
+}
+p#number{
+    text-align: center;
+    color: #fff;
+    font-size: 100px;
+}
+button{
+    border: 0;
+    width: 70px;
+    padding:5px;
+    border-radius: 5px;
+    background-color: transparent;
+    border:1px solid #fff;
+    color: #fff;
+    opacity: 0.5;
+    outline: 0;
+}
+button:first-of-type{
+    border-color: red;
+}
+button:last-of-type{
+    border-color: green;
+}
+button:hover{
+    color: rgb(236,154,2);
+    opacity: 1;
+}
