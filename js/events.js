@@ -58,3 +58,5 @@ button5.addEventListener('contextmenu',function(){
     console.log('right click');
 });
 
+let div10 = document.querySelector('#div1');
+console.log(div10.scrollHeight);
