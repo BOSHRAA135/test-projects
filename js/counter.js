@@ -4,16 +4,7 @@ const resetBtn = document.getElementById('reset');
 const decreasBtn = document.getElementById('decrease');
 
 let newNum;
-//increase
-// if(newNum < 0){
-//     currentNum.style.color = 'red';
-// }
-// else if(newNum > 0){
-//     currentNum.style.color = 'green';
-// }
-// else{
-//     currentNum.style.color= 'white';
-// }
+
 increaseBtn.addEventListener('click',function(){
     newNum = Number(currentNum.innerHTML) + 1;
     currentNum.innerHTML = newNum;
@@ -30,9 +21,6 @@ increaseBtn.addEventListener('click',function(){
 resetBtn.addEventListener('click',function(){
     currentNum.innerHTML = 0;
     currentNum.style.color = 'white';
-    // if(newNum == 0){
-    //     currentNum.style.color = 'white';
-    // }
 });
 //decrease
 decreasBtn.addEventListener('click',function(){
