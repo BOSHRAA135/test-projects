@@ -19,10 +19,6 @@ body{
 .active , .accordion:hover{
     background-color: #ccc;
 }
-.active::after{
-    content: '\00276F';
-    transform: rotate(270deg);
-}
 .accordion::after{
     content:'\00276F';
     transform: rotate(90deg);
@@ -31,6 +27,10 @@ body{
     float: right;
     margin-right: 5px;
     transition: all 0.5s;
+}
+.active::after{
+    content: '\00276F';
+    transform: rotate(270deg);
 }
 
 .panel{

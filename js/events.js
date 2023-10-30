@@ -60,3 +60,35 @@ button5.addEventListener('contextmenu',function(){
 
 let div10 = document.querySelector('#div1');
 console.log(div10.scrollHeight);
+
+const acc = document.getElementsByClassName('accordion');
+var i ;
+for(i = 0 ; i < acc.length;i++){
+    acc[i].addEventListener('click', function(){
+        this.classList.toggle('active');
+        const panel = this.nextElementSibling;
+        if(panel.style.maxHeight){
+            panel.style.maxHeight = null;
+        }
+        else{
+            panel.style.maxHeight = panel.scrollHeight + 'px';
+        }
+    });    
+}
+const acc1 = document.getElementsByClassName("accordion1");
+var i;
+for(i = 0 ; i < acc1.length ; i++){
+    acc1[i].addEventListener('click', function(){
+        this.classList.toggle('active1');
+        var panel1 = this.nextElementSibling;
+        if(panel1.style.display === 'block'){
+            panel1.style.display = 'none';
+        }
+        else{
+            panel1.style.display = 'block';
+        }
+    });
+}
+
+
+
