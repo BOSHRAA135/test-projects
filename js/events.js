@@ -76,7 +76,6 @@ for(i = 0 ; i < acc.length;i++){
     });    
 }
 const acc1 = document.getElementsByClassName("accordion1");
-var i;
 for(i = 0 ; i < acc1.length ; i++){
     acc1[i].addEventListener('click', function(){
         this.classList.toggle('active1');
