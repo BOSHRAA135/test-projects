@@ -1457,4 +1457,4 @@ let num16 = [10 , 12 , 16 , 20];
 
 console.log(num15 == num16);
 //126
-
+console.log("bsfusdifu");

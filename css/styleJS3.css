@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sidebar{
+    width: 250px;
+    background-color:#222;
+    height: 100vh;
+    position:fixed;
+    top: 0;
+    right: 0;
+}
+.sidebar h2{
+    text-align: center;
+    padding: 30px;
+    color: #999;
+}
