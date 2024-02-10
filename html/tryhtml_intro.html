@@ -1,136 +1,220 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello world!!</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1256" />
+    <title>Hello World!!</title>
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
     <style>
-        p{
-            text-align:justify;
-            color: purple;
-            font-family: sans-serif,'Franklin Gothic Medium', 'Arial Narrow', Arial ;
-            font-size:16px;
+        table {
+            display: table;
+            border-collapse:separate;
+            border-spacing:2px;
+            border-color: gray;
         }
-        iframe{
+        table,th,td{
+            border: 2px solid yellow;
+            border-radius: 10px;
+        }
+        th,td{
+            padding: 10px;
+        }
+        table.paint{
+            background-color: lightgreen;
+            /* float: right; */
+            margin: auto;
+            margin-bottom: 10px;
+            width: 400px;
+        }
+        thead{
+            color: green;
+        }
+        tbody{
+            color: blue;
+            text-align: center;
+        }
+        tfoot{
+            color: red;
+        }
+        div.a{
+            background-color: yellow;
+            width: 150px;
+            height: 80px;
+            transform: rotate(20deg);
+            margin: 30px;
+        }
+        div.b{
+            background-color: yellow;
+            width:150px;
+            height:80px;
+            transform:skewY(20deg);
+            margin:30px;
+        }
+        div.c{
+            width: 150px;
+            height: 80px;
+            background-color: yellow;
+            transform: scaleY(1.5);
+            margin: 50px;
+        }
+        div.point{
             width: 400px;
             height: 400px;
+            background-color: orange;
+            padding: 10px;
+            color: red;
+            font-weight: bold;
+            box-shadow: 8px 25px 5px #000000;
+        }
+        h1.heading{
+            color:white;
+            text-shadow: 2px 2px #000000;
+        }
+        a{
+            background-color: red;
+            padding: 10px;
+            display: inline-block;
+        }
+        a:hover{
+            transition: all .2s;
+            transform: rotate(20deg);
+        }
+        #p1{
+            text-align: center;
+            color: aqua;
+        }
+        .p1{
+            text-align: center;
+        }
+        div p {
+            color: bisque;
         }
     </style>
 </head>
-<body>
-    <h1>Welcome to my website !!</h1>
-    <br>
-    <p  class="red">This is just Test </p>
-    <h1 style=" text-align: center;">Introduction</h1>
-    <p>HTML describes the structure of a Web page</p>
-    <p>HTML is the standard markup language for creating Web pages.</p><br>
-    <p>HTML stands for Hyper Text Markup Language</p>
-    <a href="https://www.w3schools.com/html/html_intro.asp">HTML Introduction</a>
-    <h2>HTML Basic</h2>
-    <p>The purpose of a web browser (Chrome, Edge, Firefox, Safari) is to read HTML documents and display them correctly.<br>
-
-        A browser does not display the HTML tags, but uses them to determine how to display the document:<br> </p>
-    <a href="index.html">First page</a>
-    <h3>HTML CSS</h3>
-    <img src="../images/image.png" alt="HTML and CSS icon" width="300" height="200">
-    <h4 id="redcolor">HTML Editors</h4>
-    <h5>HTTML Responsive</h5>
-    
-    <h6>HTML Classes</h6>
-    
-    <pre>
-        web 
-        browser
-    </pre>
-    <p>
-        Page 
-        <br>
-        Structure
-    </p>
-
-    <hr>
-    <pre>
-        بیرون ز تو نیست هر آنچه در عالم هست
-        از خود بطلب هر آنچه خواهی که تویی
-    </pre>
-    <hr>
-    <h1>HTML Tutorial</h1>
-    <p>
-        HTML is the standard markup language for Web pages.<br><br>
-
-        With HTML you can create your own Website.<br><br>
-
-        HTML is easy to learn - You will enjoy it!<br><br>
-    </p>
-    <a href="https://w3schools.com"> 
-        <img src="../images/image1.jpg" alt="w3schools" width="300" height="200">
-    </a>
-    <hr>
-    <h1>Why do we use it?</h1>
-    <p>
-        It is a long established <i>fact</i> that a reader will be distracted by the <em>readable content of a page</em> when looking at its layout.
-        The point of using <mark> Lorem Ipsum </mark> is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable <b>English</b>. 
-        Many desktop publishing packages and web page editors now use <del>Lorem Ipsum</del> as their <ins>default</ins> model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
-        Various versions have evolved over the <small>years</small>, sometimes by <sup>accident</sup>, sometimes on <strong>purpose</strong> (injected humour and the like).
-        <br> H<sub>2</sub>O <br>
-        x<sup>2</sup> + x <sup>2</sup>
-    </p>
-    <hr>
+<body bgcolor="#bc8f8f">
+    <font color ="purple" face="'Courier New'" size="25" dir="rtl">this is a text</font>
+    <p style="color:purple; font-family:'Courier New'; font-size:25px; direction: rtl;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsa aperiam fugiat quasi error totam enim ex aliquid, tenetur, consequatur mollitia tempore eius nesciunt illo quod provident corrupti cumque impedit!</p>
+    <img src="../images/1.jpg" align="right" alt="image" border="5" height="300" width="300" >
     <ul>
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
+        <li>list item 1</li>
+        <li>list item 2</li>
+        <li>list item 3</li>
+        <li>list item 4</li>
+        <li>list item 5</li>
     </ul>
-    <hr>
     <ol>
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
     </ol>
-    <hr>
-    <table class="table1">
-        <tr class="t1">
-            <th>Elements</th>
-            <th rowspan="2">Attributes</th>
-            <th>colors</th>
+    <font align="center">Hello</font>
+    <center>
+        <font>World!!</font>
+    </center>
+    <a href="https://en.wikipedia.org/wiki/Christmas_and_holiday_season">Christmas and Holiday season</a>
+    <a href="tryhtml_box.html">Go to Book Mark</a>
+    <a href="mailto:kmf@yahoo.com">Send me more information</a>
+    <a href="javascript:alert('Hello World!!');">Execute JavaScript</a>
+    <h1>The Table element</h1>
+    <table class="paint">
+        <caption>Monthly savings</caption>
+        <tr>
+            <th>month</th>
+            <th>savings</th>
         </tr>
-        <tr class="t1">
-            <td>list</td>
-            <td>blue</td>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
         </tr>
-        <tr class="t1">
-            <td>table</td>
-            <td colspan="2">width</td>
+        <tr>
+            <td>February</td>
+            <td>$80</td>
         </tr>
     </table>
-    <b class="color">practice!</b> <b>practice!</b> <b class="color">practice!</b>
+    <table class="paint">
+        <thead>
+            <tr>
+                <th>month</th>
+                <th>savings</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>January</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>$80</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Sum</td>
+                <td>$180</td>
+            </tr>
+        </tfoot>
+    </table>
+    <form name="register" action="test.php" method="post" onsubmit="">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" value="" size="20" maxlength="30" onclick=""><br><br>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" value="" size="20" maxlength="30" onclick=""><br><br>
+        <label for="psw">Password:</label>
+        <input type="password" id="psw" name="psw" size="20"><br><br>
+        <label for="gender">gender:</label>
+        <input type="radio" id="gender" name="gender" value="male">male
+        <input type="radio" id="gender" name="gender" value="female">female<br><br>
+        <label for="marry">are u married?</label>
+        <input type="checkbox" id="marry" name="marry"> Nope <br><br>
+        <!-- <input type="checkbox" id="marry" name="marry"> yupp -->
+        <label for="pic">picture:</label>
+        <input type="file" id="pic" name="pic"><br><br>
+        <label for="culture">Cultural records:</label><br>
+        <textarea name="culture" id="culture" cols="30" rows="15" placeholder="Enter the taxt here..."></textarea><br><br>
+        <label for="evidence">evidence:</label><br>
+        <select name="madrak" id="evidence" multiple="multiple">
+            <optgroup label="وزارت علوم">
+                <option value="bsc">کارشناسی</option>
+                <option value="msc">کارشناسی ارشد</option>
+                <option value="phd">دکترای</option>
+            </optgroup>
+            <optgroup label="وزارت بهداشت">
+                <option value="bsc1">دکتری</option>
+                <option value="msc1">تخصص</option>
+            </optgroup>
+        </select> <br><br>
+        <iframe src="tryhtml_box.html" frameborder="0" width="200px" height="100px"></iframe>
+        <input type="hidden" name="status" value="send"><br><br>
+        <input type="submit">
+    </form>
+    <div style="background-color: yellow; width:600px; height:150px; padding:10px; border:2px solid red; border-radius:10px; box-sizing: border-box; margin:10px;">
+        <h2>London</h2>
+        <p>London is the capital city of England.</p>
+        <p>London has over 13 million inhabitants.</p>
+    </div>
+    <h1 class="heading">The Transform property:</h1>
+    <div class="a">Hello World!!</div>
+    <div class="b">Hello World!!</div>
+    <div class="c">Hello World!!</div>
+    <div class="point">
+        <p> <span style="font-size:25px;">Lorem ipsum</span>  dolor sit amet consectetur adipisicing elit. Corporis esse sed eaque fugiat a maiores ea quos. Laudantium, consequuntur! Fugit veniam excepturi ea tenetur veritatis aspernatur facere quam doloribus et.
+        Deleniti ut, repudiandae, ipsum architecto nostrum deserunt corrupti, dolores molestias fuga velit officiis pariatur? Quasi excepturi odio ducimus aperiam, vel quia repudiandae velit eligendi explicabo maiores neque voluptatem accusamus quod.
+        Incidunt sed omnis fugiat nemo velit, nobis cupiditate magni aut laboriosam sequi. Unde iusto, beatae dolor perspiciatis necessitatibus illum doloribus culpa deserunt? Totam ipsam eveniet harum nobis, odit deserunt error!
+        Facere distinctio alias nisi, unde, beatae tempore quo odio consequatur temporibus sit illo magni ea? Nostrum cupiditate esse sunt temporibus ullam, aspernatur est consequatur veniam minima! Dolorum, ad magnam! Animi!
+        Sint deserunt ipsa iste cupiditate voluptas nemo, iure facere eos reprehenderit officiis et. Maxime exercitationem inventore dolore nesciunt. Repudiandae culpa beatae consequuntur iste facere minus, nostrum quisquam libero obcaecati et.</p>
+    </div>
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nesciunt quo non ut ipsam adipisci voluptate sunt id ipsa, excepturi beatae, nostrum aspernatur. Aut consectetur molestias, ipsum quos voluptas maxime.
+    Labore ratione delectus rem voluptatum repellendus cum, laudantium voluptas dolorum, nihil inventore rerum eius porro possimus velit aperiam? Quia aut harum nemo deserunt sit error facilis commodi amet placeat in.
+    Quasi, eaque inventore! Debitis eveniet dolorem veniam cum voluptas ipsa cumque obcaecati rem esse corrupti quia neque rerum non voluptate ratione, repudiandae explicabo qui ad est dolorum deserunt nemo possimus?</p>
+    <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nesciunt quo non ut ipsam adipisci voluptate sunt id ipsa, excepturi beatae, nostrum aspernatur. Aut consectetur molestias, ipsum quos voluptas maxime.
+        Labore ratione delectus rem voluptatum repellendus cum, laudantium voluptas dolorum, nihil inventore rerum eius porro possimus velit aperiam? Quia aut harum nemo deserunt sit error facilis commodi amet placeat in.
+        Quasi, eaque inventore! Debitis eveniet dolorem veniam cum voluptas ipsa cumque obcaecati rem esse corrupti quia neque rerum non voluptate ratione, repudiandae explicabo qui ad est dolorum deserunt nemo possimus?</p>
     <div>
-        <hr class="center">
-        <h1 class="color">CSS Introduction</h1>
-        <h2>What is CSS?</h2>
-        <ul>
-            <li>CSS stands for Cascading Style Sheets</li>
-            <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
-            <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
-            <li>External stylesheets are stored in CSS files</li>
-        </ul>
-        <h2>Why Use CSS?</h2>
-        <p class="center bold color">CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.
-        </p>
-
-    </div>
-    <div class="background">
-        <h1>Why do we use it?</h1>
-    <p>
-        It is a <i>long </i> established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-        The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. 
-        Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
-        Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-    </p>
-    </div>
-    <iframe src="iframe.html"></iframe>
-    
-    
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aliquam dolor veritatis dolorum temporibus incidunt! Expedita laudantium dolorem totam, ratione alias repellendus id? Dicta tempora consequatur numquam facere laudantium adipisci!</p>
+    </div> 
+       
 </body>
 </html>
