@@ -24,6 +24,3 @@ for(var i = 0;i < acc.length ; i++){
         }
     });
 }
-
-let text = document.getElementById('item1').nextElementSibling.innerHTML;
-document.getElementById('demo').innerHTML = text;
